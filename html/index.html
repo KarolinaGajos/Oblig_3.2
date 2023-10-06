@@ -8,7 +8,78 @@
         <link href="css/main.css" rel="stylesheet" media="..">
     </head>
     <body>
-        <head>
-            
-        </head>
+        <header>
+            <nav>
+                <span>
+                    <a href="index.html">Logo</a>
+                </span>
+                <!-- "ul",ukoordinrte lister, ordna er "ol" , li lister må ligge under ol, ul,-->
+                <!-- obs funker ikke med classer!!! -->
+                <!-- lages snarveier på nettsiden, liker til ide som heter about-section -->
+                <ul>
+                    <li><a href="#about-section">about</a></li>
+                    <!-- linker til annet html dokument på nettstedet -->
+                    <li><a href="subscribe.html">subscribe</a></li>
+                    <!-- linker til annet nettsted -->
+                    <li><a href="https://www.google.som">contact</a></li>
+                </ul> 
+            </nav> 
+            <h1>Hello World!</h1>
+            <p>Slagord</p> 
+        </header>
+        <main>
+            <section>
+                <h2>Latest news</h2>
+                <article>
+                    <img src="img/cat-8197577_640.jpg" alt="grå katt aom koser seg">
+                    <h3>Grå pus</h3>
+                    <p>Pig in a python. Organic growth dear hiring manager: i'll book a meeting so we can solution this before the sprint is over we need to button up our approach.</p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                    <!-- bruk nindestrekk! uten da bir det 3 calsser  -->
+                </article>
+                <article>
+                    <img src="img/turtle-8105993_640.jpg" alt="en kul skilpadde som dukker opp i havoverflaten">
+                    <h3>En skilpadde</h3>
+                    <p>The closest elephant is the most dangerous dogpile that. Move the needle. </p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+                <article>
+                    <img src="img/willow-warbler-8071472_640.jpg" alt="En liten pippip">
+                    <h3>En liten pippip</h3>
+                    <p>We don't want to boil the ocean strategic high-level 30,000 ft view, so digitalize, or but what's the real problem we're trying to solve here?.</p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+            </section>
+        </main>
+        <section id="about-section">
+            <!-- id vi få tak i det overalt, java, css, vi kan linke til de, lage shorcuts -->
+            <div id="pynt">
+
+            </div>
+            <h2>About</h2>
+            <p>We're building the plane while we're flying it. Pre launch. Future-proof nobody's fault it could have been managed better build on a culture of contribution and inclusion, so who's responsible for the ask for this request?, yet roll back strategy we need to get the vernacular right, but drink from the firehose. Scope creep quick win, yet roll back strategy, and Q1 we need to future-proof this. Radical candor c-suite going forward. Radical candor regroup criticality .</p>
+
+        </section>
+        <section id="subscribe">
+            <h3>Subscribe</h3>
+            <form>
+                <label for="email-signup">Email for newsletter sign-up</label>
+                <input type="text" id="email-signup">
+                <input type="submit" value="Sign up">
+            </form>
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </nav>
+            <ul id="social-icons">
+                <li>f</li>
+                <li>i</li>
+                <li>p</li>
+            </ul>
+        </footer>
     </body>
+</html>
