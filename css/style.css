@@ -1,34 +1,74 @@
 /* id bør være ulike, classer hvor mange vi vil, atrybut selector - skal ikke brukes her,  */
 /* regelsett - bakgrunn */
-/*  css fuksjon calk - automatisk matamatikk, teks bli responsiv  */
-
-
+/*  css fuksjon calk - automatisk matamatikk, teks bli responsiv  */  
+/* em - ta utgangspunt i pixel verdi, vw - en del av visinitg bredden, nettleser bredden, calkuleres */
+/* rem verdier kommer til å endre seg grunnet pix */
 /* *stjerne selektor - gjeller alt!!! forsiktig, setter du den på hver element - overskriver mye, andre elementer arver  */
 *{
     box-sizing: border-box;
 }
 html{
     font-size: calc(1em + 1vw);
-    /* em - ta utgangspunt i pixel verdi, vw - en del av visinitg bredden, nettleser bredden, calkuleres */
-    /* rem verdier kommer til å endre seg grunnet pix */
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: blue;
+    background-color: bisque;
 }
-/* css for header og nav */
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "topp"
+                         "search"
+                         "hovedomraade" 
+                         "sidebar"
+                          "baan";
+}
 
 header{
-    text-align:center;
-    background-image: url("img/rocks-8208314_640.jpg");
+    grid-area: topp;
+}
+.search-flex{
+    grid-area: search;
+}
+
+main{
+    grid-area: hovedomraade;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+footer{
+    grid-area: baan;
+}
+
+#Logo{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     background-size: cover;
     padding: 0 0 1rem 0;
 }
-/* fjerner gult/tomt rom */
+
 header nav ul{
+    display: flex;
+    gap: 0.5rem;
     margin: 1rem 0 0 0;
     padding: 0;
+}
+header nav ul li{
+    list-style: none;
 }
 
 header nav span a{
@@ -41,6 +81,19 @@ nav a{
     color: #000;
     padding: 1rem;
     display: inline-block;
+}
+.search-flex h1{
+    text-align:center;
+    font-size: 1rem;
+}
+
+.search-flex h2{
+    text-align: left;
+    font-size: 1rem;
+}
+.search-flex form{
+    text-align: right;
+
 }
 
 main{
@@ -141,7 +194,41 @@ footer nav ul li a{
 
 }
 /* responsitv desgin */
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 850px){
+    #grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .search-flex{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    main{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    aside{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
 
     header nav span{
         float: left;
@@ -157,6 +244,9 @@ footer nav ul li a{
     header nav{
         overflow: hidden;
     }
+    .search-flex{
+        display: inline-block;
+    }
     main section{
         overflow: hidden;
         max-width: 1260px;
@@ -169,6 +259,7 @@ footer nav ul li a{
         margin: 10px;
     }
 }
+
 
 /* grid - større ting kodelayout på nettsiden, flex- mindre, funker på innhold - bruk grid i main
 grid- komplekse store layoyt eks. fb, artikler boxer? - flex
