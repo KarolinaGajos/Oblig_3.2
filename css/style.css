@@ -169,3 +169,17 @@ footer nav ul li a{
         margin: 10px;
     }
 }
+
+/* grid - større ting kodelayout på nettsiden, flex- mindre, funker på innhold - bruk grid i main
+grid- komplekse store layoyt eks. fb, artikler boxer? - flex
+grid- clean utgangspunt - fjerne default css - bex som har rundt bodty eks. vi får mer kontroll på margin/padding - vi fpr rent utgangs punkt 
+ planlegg struktur etter wireframes, hvor kompleks er det? - divitis(masse div-er, dvier rundt diver osv. - ikke lenger i bruk 
+ felxbox -en dimantional
+ grid - rutenett - todimantianalt, to akser, bestemmer mer på kollumner og rader,slipper å sloss med "float" - blir
+ overskevert, funker ikke, 
+ grid - cantainer, item, line, cell, track (column/row), area
+ container - fin foreldre element og så display 
+ grid; grid-tamplate-columns - hvor mange columner d\skal vi ha
+ grid-template-rows - auto - høyde blir generete ut i fra innholdet - dynamiske forhold!
+ grid-item. barne elementer av grid-container eks. grid.colum-start, grid-colum-end - obs float har inegn påvirkning 
+ grid item, container - brukes grid-area */
