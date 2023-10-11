@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
-        <!-- det skal fungere som responsiv design på mobil -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel="stylesheet" href="../css/style.css" type="text/css">
         <title>Dine Pene Sko</title>
-    </head>
-    <body>
+</head>
+<body>
+    <div id="grid-container">
         <header>
-            <nav>
-                <span>
-                    <a href="index.html" id="Logo">Logo</a>
-                </span>
-                <!-- "ul",ukoordinrte lister, ordna er "ol" , li lister må ligge under ol, ul,-->
-                <!-- obs funker ikke med classer!!! -->
-                <!-- lages snarveier på nettsiden, liker til ide som heter about-section -->
+            <span>
                 <ul>
-                    <li><a href="#about-section">HandleKurv</a></li>
-                    <!-- linker til annet html dokument på nettstedet -->
+                    <li><a href="hovedmeny.html">Hamburgermeny</a></li>
+                </ul>
+            </span>
+            <nav>
+                <ul>
+                    <li><a href="handlekurv.html">HandleKurv</a></li>
                     <li><a href="subscribe.html">Profil</a></li>
-                    <!-- linker til annet nettsted -->
-                    <li><a href="https://www.google.som">Favoriter</a></li>
+                    <li><a href="favorites.html">Favoriter</a></li>
                 </ul> 
             </nav> 
-            <h1>Dine Pene Sko</h1>
-            <p>Skobutikk</p> 
         </header>
-        <main>
+        <section class="search-flex">
             <section>
-                <h3>Søk</h3>
+                <li><a href="hovedmeny.html">Hamburgermeny</a></li>
                 <form>
-                    <label for="Søk">Søk på nettsiten</label>
-                    <input type="text" id="Søk">
+                    <label for="Søk">Søk</label>
+                    <input type="text" id="Søk" placeholder="Søk på nettsiden">
                     <input type="submit" value="Søk">
                 </form>
             </section>
+        </section> 
+        <main>
             <section class="default-flex">
+                <h2>Produkt</h2>
+                <article>
+                    <img src="https://placehold.co/600x400" alt="Image category for kida">
+                    <h3>Woman</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/600x400" alt="Image category for kida">
+                    <h3>Men</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/600x400" alt="Image category for kida">
+                    <h3>Kids</h3>
+                </article>
                 <article>
                     <img src="https://placehold.co/600x400" alt="Image category for women">
-                    <h3>Damer</h3>
+                    <h3>Salg!</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/600x400" alt="Image category for men">
+                    <h3>Nyheter!</h3>
+                </article>
+                <article>
+                    <img src="https://placehold.co/600x400" alt="Image category for kida">
+                    <h3>Du må sjekke dette!</h3>
                 </article>
             </section>
         </main>
+        <aside>
+            <h3>Du kan også like:</h3>
+            <ul>
+                <li><a href="løpesko.html"></a>Løpesko</li>
+                <li><a href="tursko.html"></a>Tursko</li>
+                <li><a href="penesko.html"></a>Pensko</li>
+                <li><a href="dansesko.html"></a>Dansesko</li>
+            </ul>
+        </aside>
         <footer>
+            <section id="about-section">
+                <div id="pynt">
+                </div>
+                <h2>About</h2>
+                <p></p>
+            </section>
             <nav>
                 <ul>
                     <li><a href="#">Om oss</a></li>
@@ -57,7 +90,6 @@
                 <li>p</li>
             </ul>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
-
-        
