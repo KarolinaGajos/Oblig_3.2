@@ -108,8 +108,8 @@ nav a{
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
-    background-color: #2d2a2a;
-    color: #fff;
+    background-color: #e2e5c3;
+    color: #0e0d0d;
     border-radius: 5px;
     font-weight: 400;
 }
@@ -118,7 +118,70 @@ nav a{
     font-weight: 400px;
     grid-area: search;
 }
+/* css til profil.html */
+#user-registration{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+}
+main form input{
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 0.5px solid #b5b5b5;
+}
+main form input[type=submit]{
+    background-color: green;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: 0;
+}
+/* slutt på css til profl.html */
 
+/* start på css produkt.html */
+.sweet-deal{
+    display: flex;
+    flex-direction: column;
+}
+.radio-label{
+    align-items: baseline;
+    padding: 14px 16px;
+    display: inline-block;
+}
+.str{
+    display: inline-block;
+    padding: 0.5rem;
+}
+.sweet-deal input[type=submit]{
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    border: 0;
+    padding: 1rem;
+    text-align: center;
+    margin: inherit;
+}
+.informasjon{
+    text-align: center;
+    padding: 2rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#infor{
+    text-align: center;
+    padding: 2rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* slutt på css produkt.html */
 main{
     grid-area: main;
 }
