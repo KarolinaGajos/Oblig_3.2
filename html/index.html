@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
@@ -10,31 +10,32 @@
         <link  rel="stylesheet" href="../css/style.css" type="text/css">
         <script src="https://kit.fontawesome.com/dd984fac33.js" crossorigin="anonymous"></script>
         <title>Dine Pene Sko</title>
-</head>
-<body>
-    <div id="grid-container">
+    </head>
+    <body>
+        <div id="grid-container">
         <header>
-            <span>
-                <a href="index.html" id="Logo">Logo</a>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bars"></i>
-            </span>
             <nav>
-                <ul>
-                    <li><a href="handlekurv.html">HandleKurv</a></li>
-                    <li><a href="profil.html">Profil</a></li>
-                    <li><a href="favorites.html">Favoriter</a></li>
+                <section class="logo_burger">
+                    <a href="index.html" id="Logo">Logo</a>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </section>
+                <div>
+                    <a href="profil.html"><i id="user" class="fa-solid fa-user"></i></a>
+                    <a href="handlekurv.html"><i id="handlekurv" class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="favorites.html"><i id="favorites" class="fa-solid fa-heart"></i></a>
+                </div>
+                <ul class="navbar">
+                    <li><a href="produkt.html">Produkter</a></li>
+                    <li><a href="#aboutoss">Om oss</a></li>
+                    <li><a href="#services">Services</a></li>
                 </ul> 
             </nav> 
         </header>
         <section class="search-flex">
             <h1>Velkommen til Dine Pene Sko Nettbutikk!</h1>
             <section>
-                <ul>
-                    <li><a href="hovedmeny.html">Hamburgermeny</a></li>
-                </ul>
-                <form>
-                    <label for="Søk">Søk</label>
+                <form method="post" action="#" autocomplete="on">
+                    <label for="Søk"><i class="fa-solid fa-magnifying-glass"></i></label>
                     <input type="text" id="Søk" placeholder="Søk på nettsiden">
                     <input type="submit" value="Søk">
                 </form>
@@ -42,7 +43,6 @@
         </section> 
         <main>
             <section class="default-flex">
-                <h2>Hovedmeny</h2>
                 <article>
                     <img src="../img/salg.jpg" alt="Image category for salg">
                     <h3>Salg!</h3>
@@ -57,35 +57,31 @@
                 </article>
             </section>
         </main>
-        <aside>
-            <h3>Du kan også like:</h3>
-            <ul>
-                <li><a href="løpesko.html"></a>Løpesko</li>
-                <li><a href="tursko.html"></a>Tursko</li>
-                <li><a href="penesko.html"></a>Pensko</li>
-                <li><a href="dansesko.html"></a>Dansesko</li>
-            </ul>
-        </aside>
         <footer>
-            <section id="about-section">
-                <div id="pynt">
-                </div>
-                <h2>About</h2>
-                <p></p>
-            </section>
-            <nav>
-                <ul>
+            <ul id="foots">
                     <li><a href="#">Om oss</a></li>
                     <li><a href="#">Kundeservice</a></li>
                     <li><a href="#">Betalingsmuligheter</a></li>
-                </ul>
-            </nav>
+            </ul>
             <ul id="social-icons">
-                <li>f</li>
-                <li>i</li>
-                <li>p</li>
+                <li><a href="facebook.com">F</a></li>
+                <li><a href="instagram.com">I</a></li>
+                <li><a href="facebook.com">P</a></li>
             </ul>
         </footer>
-    </div>
-</body>
+        </div>
+        <script>
+
+        let x = document.querySelector(".navbar")
+
+        document.getElementById("ham").addEventListener("click", (e) =>{
+            if (x.className === "navbar") {
+                x.className +=" responsive";
+            } else {
+                x.className = "navbar"
+            }
+        })
+
+        </script>
+    </body>
 </html>

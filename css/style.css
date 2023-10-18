@@ -15,74 +15,116 @@ body{
     margin: 0;
     background-color: bisque;
 }
-
-
 #grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "topp"
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header"
                          "search"
-                         "hovedomraade" 
-                         "sidebar"
-                          "baan";
+                         "main" 
+                          "footer";
+}
+header, main, footer{
+    padding: 1rem;
 }
 
 header{
-    grid-area: topp;
+    grid-area: header;
+    font-size: 1.5rem;
+    background-color:#fff;
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+   
+}
+.logo_burger{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+header nav ul li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-left: 30%;
+    padding: 0;
+    color: #000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
+    display: inline-block;
+}
+#Logo{
+    align-items: left;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+    margin: auto;
+}
+
+.navbar{
+    display: none;
+}
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #2d2a2a;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+    
+
+}
+.responsive a{
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+.black-btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #2d2a2a;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
 }
 .search-flex{
+    font-size: 1rem;
+    font-weight: 400px;
     grid-area: search;
 }
 
 main{
-    grid-area: hovedomraade;
-}
-
-aside{
-    grid-area: sidebar;
+    grid-area: main;
 }
 
 footer{
-    grid-area: baan;
-}
-
-#Logo{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-}
-
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    background-size: cover;
-    padding: 0 0 1rem 0;
-}
-
-header nav ul{
-    display: flex;
-    gap: 0.5rem;
-    margin: 1rem 0 0 0;
-    padding: 0;
-}
-header nav ul li{
-    list-style: none;
-}
-
-header nav span a{
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-nav a{
-    text-decoration: none;
-    color: #000;
-    padding: 1rem;
-    display: inline-block;
+    grid-area: footer;
 }
 
 .search-flex h1{
@@ -144,20 +186,18 @@ p{
 
 }
 /* klasser brukes for å gjenbruke design  */
-#about-section{
+#foots{
     text-align: center;
     padding: 2rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 /* det tar bare den ene p taggen i about section  */
 #about-section p{
     text-align: justify;
 }
-#pynt{
-    background-image: url("img/shellfish-8080937_1280.jpg");
-    height: 300px;
-    padding: 2rem;
 
-}
 #subscribe{
     background-color: #f1e7e7;
     padding: 1rem;
@@ -197,9 +237,10 @@ footer nav ul li a{
 
 }
 /* responsitv desgin */
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 600px){
     #grid-container{
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "header header header" "search search search" ". main ." "footer footer footer";
     }
     header{
         grid-column-start: 1;
@@ -207,12 +248,36 @@ footer nav ul li a{
         grid-row-start: 1;
         grid-row-end: 2;
     }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+    #ham, .fa-magnifying-glass{
+        display: none;
+    }
     .search-flex{
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
     }
+    .default-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .default-flex img{
+        width: 150%;
+    }
+    .default-flex section{
+        width: 40%;
+        align-self: center;
+        padding: 1rem;
+    }
+    
     main{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -220,23 +285,17 @@ footer nav ul li a{
         grid-row-end: 4;
     }
     
-    aside{
-        grid-column-start: 3;
+    footer{
+        grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
     }
-    footer{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
 
-    header nav span{
+    #Logo{
         float: left;
     }
-    header nav ul{
+    header nav div{
         float: right;
         margin: 0;
     }
