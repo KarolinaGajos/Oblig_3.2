@@ -7,72 +7,68 @@
 *{
     box-sizing: border-box;
 }
-html{
-    font-size: calc(1em + 1vw);
-}
+
 body{
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     background-color: bisque;
 }
 #grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header"
-                         "search"
-                         "main" 
-                          "footer";
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "header" "search" "main" "footer";
 }
-header, main, footer{
-    padding: 1rem;
+header{
+    grid-area: header;
+}
+.search-flex{
+    grid-area: search;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
 }
 
 header{
-    grid-area: header;
-    font-size: 1.5rem;
-    background-color:#fff;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color:#fff;
     background-size: cover;
-   
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav div{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-left: 30%;
+    padding: 0.5rem;
+    color: #000;
+    align-items: baseline;
+    text-decoration: none;
+}
+header nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
 }
 .logo_burger{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
-header nav ul li{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-header nav ul{
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-}
-
-nav div{
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-    margin-left: 30%;
-    padding: 0;
-    color: #000;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-}
-nav a{
-    text-decoration: none;
-    color: #000;
-    padding: 0.5rem;
-    display: inline-block;
-}
 #Logo{
+    display: flex;
     align-items: left;
     text-decoration: none;
     font-size: 1.5rem;
@@ -81,22 +77,19 @@ nav a{
     text-align: left;
     margin: auto;
 }
-
 .navbar{
     display: none;
 }
 .responsive{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position:absolute;
     background-color: #f4efb6;
     margin: 0;
     padding: 0;
     top: 40px;
     width: 100%;
     list-style: none;
-    
-
 }
 .responsive a{
     color: black;
@@ -114,10 +107,26 @@ nav a{
     font-weight: 400;
 }
 .search-flex{
+    display: grid;
+    justify-content: center;
     font-size: 1rem;
     font-weight: 400px;
-    grid-area: search;
+    grid-area: "search";
+    
 }
+.search-flex h1{
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.search-flex form{
+    display: flex;
+    text-align: right;
+    justify-content: center;
+}
+
+
 /* css til profil.html */
 #user-registration{
     display: flex;
@@ -183,37 +192,32 @@ main form input[type=submit]{
 
 /* slutt på css produkt.html */
 main{
-    grid-area: main;
+    grid-template-areas: "main";
+    justify-content: space-between;
 }
-
-footer{
-    grid-area: footer;
-}
-
-.search-flex h1{
-    text-align:center;
-    font-size: 1rem;
-}
-
-.search-flex h2{
-    text-align: left;
-    font-size: 1rem;
-}
-.search-flex form{
-    text-align: right;
-
-}
-
-main{
+.default-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
-    
 }
-main section h2{
-    margin: 2rem 0;
+.default-flex article {
+    flex-basis: 33%;
+    min-width: 300px;
 }
+.default-flex article img {
+    width: 100%;
+}
+footer{
+    grid-template-areas: "footer";
+    display: grid;
+    grid-column: 1/-1;
+    column-span: all;
+}
+
+
+
 article{
-    max-width: 400px;
-    min-width: 250px;
     width: 100%;
     margin: 1rem auto; 
     background-color: #efff;
@@ -221,22 +225,10 @@ article{
 
 main section article img{
     width: 100%;
-}
-h1{
-    font-size: 2rem;
-}
-h2{
-    font-size: 1.8rem;
-}
-h3{
-    font-size: 1.6rem;
-}
-p{
-    font-size: 1.4rem;
-    margin: 15px;
+    text-align: center;
 }
 
-.read-more-btn{
+.read-more-btn{ 
     background-color: #2c2626;
     color: #efff;
     display: inline-block;
@@ -299,14 +291,15 @@ footer nav ul li a{
 /* responsitv desgin */
 @media only screen and (min-width: 600px){
     #grid-container{
+        max-width: none;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "header header header" "search search search" ". main ." "footer footer footer";
+        grid-template-areas: "header header header" "search search search" " main main main" "footer footer footer";
     }
     header{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-template-areas: header;
+        display: flex;
+        grid-column: 1/-1;
+        column-span: all;
     }
     .navbar{
         display: flex;
@@ -315,22 +308,24 @@ footer nav ul li a{
         list-style: none;
         margin: 0;
     }
-    #ham, .fa-magnifying-glass{
+    #ham{
         display: none;
     }
+
     .search-flex{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-template-areas: search;
+        display: grid;
+        grid-column: 1/-1;
+        column-span: all;
     }
     .default-flex{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        text-align: center;
     }
     .default-flex img{
-        width: 150%;
+        width: 100%;
     }
     .default-flex section{
         width: 40%;
@@ -339,17 +334,16 @@ footer nav ul li a{
     }
     
     main{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-template-areas: main;
+        display: grid;
+        grid-column: 1/-1;
+        column-span: all; 
     }
-    
     footer{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-template-areas: footer;
+        display: grid;
+        grid-column: 1/-1;
+        column-span: all;
     }
 
     #Logo{
@@ -371,13 +365,11 @@ footer nav ul li a{
     }
     main section{
         overflow: hidden;
-        max-width: 1260px;
         width: 100%;
         margin: 0 auto;
     }
 
     main article{
-        float: left;
         margin: 10px;
     }
 }
