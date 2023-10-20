@@ -240,7 +240,7 @@ main section article img{
     width: 100%;
     text-align: center;
 }
-.sweet-deal section{
+.right-ips{
     display: none;
 }
 .read-more-btn{ 
@@ -252,7 +252,7 @@ main section article img{
     margin: 0.5rem;
 
 }
-/* klasser brukes for å gjenbruke design  */
+
 #foots{
     text-align: center;
     padding: 2rem 0;
@@ -260,48 +260,26 @@ main section article img{
     display: flex;
     flex-direction: column;
 }
-/* det tar bare den ene p taggen i about section  */
-#about-section p{
-    text-align: justify;
-}
-
-#subscribe{
-    background-color: #f1e7e7;
-    padding: 1rem;
-    text-align: center;
-
-}
-#subscribe form label, #subscribe form input{
-    display: block;
-    margin: 0 auto;
-}
 
 footer nav ul {
-    /* fjerner punkter i meny */
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
-}
-
-footer nav ul li a{
-    padding: 0.5rem;
 }
 #social-icons{
     padding: 0;
     margin: 1rem 0;
     text-align: center;
 }
-/* kun for ul elementer, må skrives li for å ta alle  */
 #social-icons li{
     display: inline-block;
-    background-color: #000;
-    color: #fff;
+    background-color: rgb(160, 132, 97);
+    color: black;
     width: 60px;
     height: 60px;
     padding: 1rem;
     border-radius: 50%;
-
 }
 /* responsitv desgin */
 @media only screen and (min-width: 600px){
@@ -396,7 +374,8 @@ footer nav ul li a{
     .sweet-deal h3{
         display: none;
     }
-    .sweet-deal section h3{
+    .right-ips{
+        font-size: large;
         display: inline;
     }
     .sweet-deal-produkt{
@@ -428,9 +407,7 @@ footer nav ul li a{
     .info-om-sko{
         order: 2;
     }
-    .right{
-        order: 1;
-    }
+    
     .slag{
         display: grid;
         grid-column-start: 1;
