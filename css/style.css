@@ -133,6 +133,7 @@ header nav a{
 /* css til profil.html */
 #user-registration{
     display: flex;
+    justify-items: auto;
     flex-direction: column;
     background-color: #fff;
     border-radius: 10px;
@@ -155,9 +156,19 @@ main form input[type=submit]{
 /* slutt på css til profl.html */
 
 /* start på css produkt.html */
-.sweet-deal{
+.sweet-deal-produkt{
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+.sweet-deal-produkt img{
+    width: 100%;
+}
+.info-om-sko{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: bisque;
 }
 .radio-label{
     align-items: baseline;
@@ -168,7 +179,7 @@ main form input[type=submit]{
     display: inline-block;
     padding: 0.5rem;
 }
-.sweet-deal input[type=submit]{
+.sweet-deal-produkt input[type=submit]{
     background-color: black;
     color: #fff;
     font-weight: 600;
@@ -191,6 +202,7 @@ main form input[type=submit]{
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 /* slutt på css produkt.html */
@@ -305,6 +317,7 @@ footer nav ul li a{
         display: flex;
         grid-column: 1/-1;
         column-span: all;
+        background-color: white;
     }
     .navbar{
         display: flex;
@@ -322,13 +335,20 @@ footer nav ul li a{
         display: grid;
         grid-column-start: 1;
         grid-column-end: 4;
-        justify-items: stretch;
-        
+        background-color: bisque;
     }
-    .search-flex form{
-        grid-template-areas: search;
-        justify-items: stretch;
+    .search-flex label{
+        font-size: xx-large;
     }
+    #Søk{
+        width:800px;
+        height: 40px;
+    }
+   .search-flex h1{
+        font-size: x-large;
+        margin: auto;
+
+   }
     .default-flex{
         grid-template-areas: main;
         display: grid;
@@ -350,13 +370,16 @@ footer nav ul li a{
         grid-column: 1/-1;
         column-span: all; 
         grid-gap: 2rem;
+        background-color: white;
     }
     .sweet-deal{
         grid-template-areas: main;
-        display: grid;
+        display: flex;
+        flex-direction: row;
         grid-column-start: 1;
         grid-column-end: 4;
         justify-items: stretch;
+        background-color: bisque;
     }
     .sweet-deal img{
         grid-template-areas: main;
@@ -366,9 +389,47 @@ footer nav ul li a{
     }
     .sweet-deal section{
         grid-template-areas: main;
-        display: grid;
+        display: inline;
         grid-column-start: 2;
         grid-column-end: 4;
+    }
+    .sweet-deal h3{
+        display: none;
+    }
+    .sweet-deal section h3{
+        display: inline;
+    }
+    .sweet-deal-produkt{
+        display: flex;
+        flex-direction: row;
+        justify-items: inherit;
+    }
+    .left-side{
+        padding: 1rem;
+        flex: 50%;
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+    .left-side h1, p{
+        display: none;
+    }
+    .info-om-sko{
+        display: inline;
+        justify-items: right;
+        text-align: left;
+        background-color: #fff;
+        padding: 1rem;
+        flex: 50%;
+        margin-bottom: 16px;
+    }
+    .sweet-deal-produkt img{
+        width: 100%;
+    }
+    .info-om-sko{
+        order: 2;
+    }
+    .right{
+        order: 1;
     }
     .slag{
         display: grid;
@@ -384,6 +445,14 @@ footer nav ul li a{
         display: grid;
         grid-column-start: 3;
         grid-column-end: 4;
+    }
+    #user-registration{
+        display: grid;
+        justify-items: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        inline-size: fit-content;
+
     }
     footer{
         grid-template-areas: footer;
