@@ -260,6 +260,7 @@ main section article img{
     list-style: none;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 footer nav ul {
@@ -332,6 +333,7 @@ footer nav ul {
         grid-template-areas: main;
         display: grid;
         justify-content: space-between;
+        justify-items: center;
         text-align: center;
         
     }
@@ -362,9 +364,8 @@ footer nav ul {
     }
     .sweet-deal img{
         grid-template-areas: main;
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
+        display: flex;
+        width: 150%;
     }
     .sweet-deal section{
         grid-template-areas: main;
@@ -372,23 +373,13 @@ footer nav ul {
         grid-column-start: 2;
         grid-column-end: 4;
     }
-    .sweet-deal h3{
+    
+    .ny-section{
         display: flex;
-        flex-direction: row;
-        font-size: large;
-        width: 300px;
-        height: fit-content;
-    }
-    .sweet-deal p{
-        display: block ruby;
-        flex-direction: row;
-        font-size: large;
-        width: 200px;
-        height: fit-content;
+        text-align: center;
     }
     .right-ips{
-        font-size: large;
-        display: flex;
+        font-size: large; 
     }
     .sweet-deal-produkt{
         display: flex;
@@ -451,9 +442,10 @@ footer nav ul {
     #user-registration{
         display: grid;
         justify-items: center;
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 3;
         inline-size: fit-content;
+        margin: auto;
 
     }
     footer{
@@ -492,25 +484,9 @@ footer nav ul {
     main section{
         overflow: hidden;
         width: 100%;
-       
     }
 
     main article{
         margin: 10px;
     }
 }
-
-
-/* grid - større ting kodelayout på nettsiden, flex- mindre, funker på innhold - bruk grid i main
-grid- komplekse store layoyt eks. fb, artikler boxer? - flex
-grid- clean utgangspunt - fjerne default css - bex som har rundt bodty eks. vi får mer kontroll på margin/padding - vi fpr rent utgangs punkt 
- planlegg struktur etter wireframes, hvor kompleks er det? - divitis(masse div-er, dvier rundt diver osv. - ikke lenger i bruk 
- felxbox -en dimantional
- grid - rutenett - todimantianalt, to akser, bestemmer mer på kollumner og rader,slipper å sloss med "float" - blir
- overskevert, funker ikke, 
- grid - cantainer, item, line, cell, track (column/row), area
- container - fin foreldre element og så display 
- grid; grid-tamplate-columns - hvor mange columner d\skal vi ha
- grid-template-rows - auto - høyde blir generete ut i fra innholdet - dynamiske forhold!
- grid-item. barne elementer av grid-container eks. grid.colum-start, grid-colum-end - obs float har inegn påvirkning 
- grid item, container - brukes grid-area */
