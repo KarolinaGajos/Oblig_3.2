@@ -209,6 +209,7 @@ main form input[type=submit]{
 main{
     grid-template-areas: "main";
     justify-content: space-between;
+    display: grid;
 }
 .default-flex{
     display: flex;
@@ -338,7 +339,7 @@ footer nav ul {
         width: 50%;
     }
     .default-flex section{
-        width: 40%;
+        width: 80%;
         align-self: center;
         padding: 1rem;
     }
@@ -372,28 +373,45 @@ footer nav ul {
         grid-column-end: 4;
     }
     .sweet-deal h3{
-        display: none;
+        display: flex;
+        flex-direction: row;
+        font-size: large;
+        width: 300px;
+        height: fit-content;
+    }
+    .sweet-deal p{
+        display: block ruby;
+        flex-direction: row;
+        font-size: large;
+        width: 200px;
+        height: fit-content;
     }
     .right-ips{
         font-size: large;
-        display: inline;
+        display: flex;
     }
     .sweet-deal-produkt{
         display: flex;
         flex-direction: row;
         justify-items: inherit;
+        width: 1500px;
     }
     .left-side{
         padding: 1rem;
-        flex: 50%;
+        flex: 100%;
         margin-right: auto;
         margin-bottom: 16px;
     }
-    .left-side h1, p{
-        display: none;
+    .right-side{
+        padding: 1rem;
+        flex: 70%;
+        margin-right: auto;
+        margin-bottom: 16px;
+
     }
     .info-om-sko{
-        display: inline;
+        display: flex;
+        flex-direction: column;
         justify-items: right;
         text-align: left;
         background-color: #fff;
@@ -403,9 +421,16 @@ footer nav ul {
     }
     .sweet-deal-produkt img{
         width: 100%;
+        height: fit-content;
     }
     .info-om-sko{
         order: 2;
+    }
+    #infor{
+        text-align: center;
+        list-style: none;
+        display: flex;
+        flex-direction: revert-layer;
     }
     
     .slag{
@@ -437,6 +462,15 @@ footer nav ul {
         grid-column: 1/-1;
         column-span: all;
     }
+    #foots{
+        display: flex;
+        flex-direction: row;
+    }
+    #foots li{
+        padding: 1rem;
+        font-size: x-large;
+        list-style: none;
+    }
 
     #Logo{
         float: left;
@@ -458,7 +492,7 @@ footer nav ul {
     main section{
         overflow: hidden;
         width: 100%;
-        margin: 0 auto;
+       
     }
 
     main article{
