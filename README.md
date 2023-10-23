@@ -1,6 +1,6 @@
 # Oblig_3
 OBS: 
-Etter samtale med studentassistent ble det peket på at hamburgermany er ikke egen nettside med egen HTML, grunnet dette velger jeg å lage en ny nettside og ny HTML dokument; nemlig "profil.html", et nettside hvor bruker kan logge seg inn eller registrere som ny kunde til min nettstedet. Dette nettsiden er ikke med i den tidligere obligen eller wireframes. 
+Etter samtale med studentassistent ble det peket på at hamburgermany er ikke egen nettside med egen HTML,ble fortalt av studentassistent at det er helt i orden å lage en ny nettsiden slev om den var ikke med i oblig 2 og wireframes. Grunnet dette velger jeg å lage en ny nettside og ny HTML dokument; nemlig "profil.html", et nettside hvor bruker kan logge seg inn eller registrere som ny kunde til min nettstedet. Dette nettsiden er ikke med i den tidligere obligen eller wireframes. 
 
 Kilder på bilder brukt i oppgaven:
 "Sweet deal!":
