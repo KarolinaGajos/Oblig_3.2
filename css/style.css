@@ -309,6 +309,9 @@ footer nav ul {
     #ham{
         display: none;
     }
+    .header nav div{
+        align-items: end;
+    }
 
     .search-flex{
         grid-template-areas: search;
