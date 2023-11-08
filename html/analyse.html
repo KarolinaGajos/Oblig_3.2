@@ -9,7 +9,7 @@
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
-        <link  rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
         <script src="https://kit.fontawesome.com/dd984fac33.js" crossorigin="anonymous"></script>
         <title>Analyse</title>
     </head>
@@ -296,19 +296,38 @@
                 <article>Jeg har gjørt forbedrende tiltak for å øke siden SEO og UU.
                     <ul class="endringer">
                         <li>
-                            <h3>Index.html</h3>
-                            <img src="../img/SEO_index.png" alt="Bilde av SEO analyse">
-                            <p>SEO analyse av index.html viser at siden har en god score på 100. Det er ingen problemer med SEO på denne siden.</p>
+                            <h3>Webaim - UU error - Kontrast</h3>
+                            <p> 3 Contrast errors: very low contrast. </p>
+                            <img src="../img/web_index_1.png" alt="Bilde av UU analyse - summary">
+                            <p>Feilen var rettet ved å endre css. Reslutet: ingen error på kontrast.</p>
+                            <img src="../img/fikset_contrast_kode.png" alt="Bildet av css kode">
+                            <img src="../img/contrast_1.png" alt="Bilde av rettet feil på contrast error">
+                            <img src="../img/contrast_2.png" alt="Bilde av rettet feil på contrast error">
                         </li>
                         <li>
-                            <h3>Produkt.html</h3>
-                            <img src="../img/SEO_produkt.png" alt="Bilde av SEO analyse">
-                            <p>SEO analyse av produkt.html viser at siden har en god score på 100. Det er ingen problemer med SEO på denne siden.</p>
+                            <h3>Webaim - SEO error - Empty link</h3>
+                            <p> 3 Error: Empty link. </p>
+                            <img src="../img/error_empty_link.png" alt="Bilde av error  - empty link">
+                            <p>Error var rettet med hjelp av 'aria-label' attrubutt som ble satt in i 'a href'. Metoden var fant på nett. Etter å sette inn attributtet error forsviner - det vises ARIA-attributt. Har på bilede kun en av feilene ble rettet for å se om det fungerer.</p>
+                            <img src="../img/fikset_error_empty_link_kode.png" alt="Bilde av html kode - empty link">
+                            <img src="../img/fiks_error_empty_link.png" alt="Bilde av fikset error - empty link">
+                            <img src="../img/aria_attributt.png" alt="Bilde av aria attributt">
                         </li>
                         <li>
-                            <h3>profil.html</h3>
-                            <img src="../img/SEO_handlekurv.png" alt="Bilde av SEO analyse">
-                            <p>SEO analyse av handlekurv.html viser at siden har en god score på 100. Det er ingen problemer med SEO på denne siden.</p>
+                            <h3>Webaim - SEO error - Empty form label</h3>
+                            <p> 1 Error: Empty form label. </p>
+                            <img src="../img/error_empty_form_label1.png" alt="Bilde av error - empty form label">
+                            <img src="../img/error_empty_form_label2.png" alt="Bilde av error - empty form label">
+                            <p>Error var fikset med hjelp av "aria-label" atributt, metoden var fant på nett. Error vises ikke lenger, vises ARIA-attrubitt isteden for.</p>
+                            <img src="../img/fikset_error_empty_form_label_kode.png" alt="Bilde av html kode - empty form label">
+                            <img src="../img/fiks_error_label.png" alt="Bilde av fikset error - empty form label">
+                            <img src="../img/aria_attributt.png" alt="Bilde av aria attributt">
+                        </li>
+                        <li>
+                            <h3>Webaim etterpå</h3>
+                            <p>Etter å ha rettet på alle feilene på webaim, analysen ser slik ut:</p>
+                            <img src="../img/fikset_webaim.png" alt="Bilde av webaim etterpå">
+                            <p>Etter fiksing av error på web aim ser lighthouse slik ut:</p>
                         </li>
                     </ul>
                 </article>
