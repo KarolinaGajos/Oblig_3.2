@@ -283,6 +283,14 @@ footer nav ul {
     padding: 1rem;
     border-radius: 50%;
 }
+.snarvei {
+    position: absolute;
+    left: -2000px;
+    top: 0px;
+    }
+    .snarvei:focus {
+    left: 0px;
+    }
 /* responsitv desgin */
 @media only screen and (min-width: 600px){
     #grid-container{
@@ -492,4 +500,12 @@ footer nav ul {
     main article{
         margin: 10px;
     }
+    .snarvei {
+        position: absolute;
+        left: -2000px;
+        top: 0px;
+        }
+        .snarvei:focus {
+        left: 0px;
+        }
 }
