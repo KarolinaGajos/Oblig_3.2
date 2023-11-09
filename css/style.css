@@ -283,14 +283,7 @@ footer nav ul {
     padding: 1rem;
     border-radius: 50%;
 }
-.snarvei {
-    position: absolute;
-    left: -2000px;
-    top: 0px;
-    }
-    .snarvei:focus {
-    left: 0px;
-    }
+
 /* responsitv desgin */
 @media only screen and (min-width: 600px){
     #grid-container{
@@ -500,12 +493,32 @@ footer nav ul {
     main article{
         margin: 10px;
     }
-    .snarvei {
+    .main_analyse img{
+        width: 50%;
+        padding: 1rem;
+        
+    }
+    .tabel{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .tabel td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        list-style: none;
+    }
+    .skip-link {
         position: absolute;
-        left: -2000px;
-        top: 0px;
-        }
-        .snarvei:focus {
-        left: 0px;
-        }
+        top: -40px;
+        left: 0;
+        background: #000;
+        color: white;
+        padding: 8px;
+      }
+      
+      .skip-link:focus {
+        top: 0;
+      }
 }

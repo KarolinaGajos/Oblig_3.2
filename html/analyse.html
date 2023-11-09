@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Karolina Gajos">
         <meta name="description" content="Homepage av Dine Pane Sko">
+        <meta name="keywords" content="sko, damesko, salg sko">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
@@ -40,17 +41,10 @@
                 <input type="submit" value="Søk">
             </form>
         </section>
-        <main>
+        <main class="main_analyse">
             <h1>På denne siden fines det dokumentasjon på analysen av  Dine Pene Sko nettstedet.</h1>
-            <p class="remove">Analyse og forbedringsprosessen skal dokumenteres med skjermbilder av resultater og tiltak 
-                og tekstlige forklaring på hva som var et problem og hvordan dette ble løst.
-                Strukturer siden ved bruk av fornuftige lister (ul/ol), overskrifter (h1-h6) og seksjonering(section)
-                Analyse siden skal linkes opp i menyen på alle de andre sidene og ha samme grunnstruktur 
-                 (heading, nav, main og footer) som resten av nettstedet.</p>
             <section class="nøkkelord">
                 <h2>Nøkkelord undersøkelse</h2>
-                <p class="remove">Når du har funnet fornuftige nøkkelord skal disse dokumenteres på analyse siden. Du skal også skrive hvorfor du har valgt ut nøkkelordene,
-                    er det av geografiske grunner?</p>
                 <article>Ved bruk av google trends identifiserte jeg relevante søkeord/nøkkelord for nettstedet.Nøkkelord som ble valgt:
                     <ul class="nøkkelord_analyse">
                       <li>
@@ -77,11 +71,6 @@
                 </article>
             </section>
             <section class="analyse_SEO">
-            <p class="remove">
-                Bruk lighthouse til å gjøre en SEO analyse av alle sidene på nettstedet med unntak av analyse.html siden. 
-                For å kunne bruke Lighthouse må siden ha en HTTP eller HTTPS protokoll.
-                Ta skjermbilder og dokumenter de ulike resultatene ved å legge bilder og tekstlige forklaringer inn på analyse.html siden.
-                Lag en seksjon for SEO og en for UU hvor de ulike resultatene skal dokumenteres.</p>
                 <h2>SEO analyse</h2>
                 <article>Ved bruk av lighthouse har jeg gjort SEO analyse, Accessability og Best Practises av alle sidene på nettstedet med unntak av analyse.html siden.
                     <ul class="SEO_analyse">
@@ -90,116 +79,100 @@
                             <img src="../img/index_seo_1.png" alt="Bilde av SEO analyse på index siden, alle resultater.">
                             <p>Bilde presenterer scores av SEO analyse, Accessability og Best Practises av index.html siden</p>
                             <img src="../img/index_seo_2.png" alt="Bilde av SEO analyse på index siden. Accessibility errors.">
-                            <p>Accessibility score på 91. Error som vises er:
-                                <li>Links do not have a discernible name. Må forbedres for å: "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."</li>
-                                <li>Heading elements are not in a sequentially-descending order. Må forbedres for å: "These are opportunities to improve keyboard navigation in your application."</li>
-                            </p>
+                            <h2>Accessibility score på 91. Error som vises er:</h2>
+                                <p>Links do not have a discernible name. Må forbedres for å: "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."</p>
+                                <p>Heading elements are not in a sequentially-descending order. Må forbedres for å: "These are opportunities to improve keyboard navigation in your application."</p>
                             <img src="../img/index_seo_3.png" alt="Bilde av SEO analyse på index siden. Best Practises errors.">
-                            <p>Best Practises score på 95. Errors som vises er:
-                                <li>Browser errors were logged to the console. Må forbedres for å: "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns"</li>
-                            </p>
+                            <h2>Best Practises score på 95. Errors som vises er:</h2>
+                                <p>Browser errors were logged to the console. Må forbedres for å: "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns"</p>
                             <img src="../img/index_seo_4.png" alt="Bilde av SEO analyse på index siden. SEO errors.">
-                            <p>SEO score på 92. Error som vises er:
-                                <li>Document does not have a meta description. Må forbedres for å: "Format your HTML in a way that enables crawlers to better understand your apps content."</li>
-                            </p>
+                            <h2>SEO score på 92. Error som vises er:</h2>
+                                <p>Document does not have a meta description. Må forbedres for å: "Format your HTML in a way that enables crawlers to better understand your apps content."</p>
                         </li>
                         <li>
                             <h3>Produkt.html</h3>
                             <img src="../img/produkt_seo_1.png" alt="Bilde av SEO analyse på produkt siden, alle resultater.">
-                            <p>Bilde presenterer scores av SEO analyse, Accessability og Best Practises av produkt.html siden</p>
+                                <p>Bilde presenterer scores av SEO analyse, Accessability og Best Practises av produkt.html siden</p>
                             <img src="../img/produkt_seo_2.png" alt="Bilde av SEO analyse på produkt siden. Accessibility errors.">
-                            <p>Accessibility score på 86. Errors som vises er:
-                                <li>Links do not have a discernible name. Må forbedres for å: "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."</li>
-                                <li>Heading elements are not in a sequentially-descending order. Må forbedres for å: "These are opportunities to improve keyboard navigation in your application."</li>
-                                <li>Select elements do not have associated label elements. Må forbedres for å: These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader.</li>
-                            </p>
+                            <h2>Accessibility score på 86. Errors som vises er:</h2>
+                                <p>Links do not have a discernible name. Må forbedres for å: "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."</p>
+                                <p>Heading elements are not in a sequentially-descending order. Må forbedres for å: "These are opportunities to improve keyboard navigation in your application."</p>
+                                <p>Select elements do not have associated label elements. Må forbedres for å: These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader.</p>
                             <img src="../img/produkt_seo_3.png" alt="Bilde av SEO analyse på produkt siden. Best Practises errors.">
-                            <p>Best Practises score på 95. Errors som vises er:
-                                <li>Browser errors were logged to the console. Må forbedres for å: "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns"</li>
-                            </p>
+                            <h2>Best Practises score på 95. Errors som vises er:</h2>
+                                <p>Browser errors were logged to the console. Må forbedres for å: "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns"</p>
                             <img src="../img/produkt_seo_4.png" alt="Bilde av SEO analyse på produkt siden. SEO errors.">
-                            <p>SEO score på 90. Error som vises er:
-                                <li>Document does not have a meta description. Må forbedres for å: "Format your HTML in a way that enables crawlers to better understand your apps content."</li>
+                            <h2>SEO score på 90. Error som vises er:</h2>
+                                <p>Document does not have a meta description. Må forbedres for å: "Format your HTML in a way that enables crawlers to better understand your apps content."</p>
                         </li>
                         <li>
                             <h3>profil.html</h3>
                             <img src="../img/profil_seo_1.png" alt="Bilde av SEO analyse på profil siden, alle resultater.">
-                            <p>Bilde presenterer scores av SEO analyse, Accessability og Best Practises av profil.html siden</p>
+                                <p>Bilde presenterer scores av SEO analyse, Accessability og Best Practises av profil.html siden</p>
                             <img src="../img/profil_seo_2.png" alt="Bilde av SEO analyse på profil siden. Accessibility errors.">
-                            <p>Accessibility score på 93. Errors som vises er:
-                                <li>Links do not have a discernible name. Må forbedres for å: "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."</li>
+                            <h2>Accessibility score på 93. Errors som vises er:</h2>
+                                <p>Links do not have a discernible name. Må forbedres for å: "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."</p>
                             <img src="../img/profil_seo_3.png" alt="Bilde av SEO analyse på profil siden. Best Practises errors.">
-                            <p>Best Practises score på 95. Errors som vises er:
-                                <li>Browser errors were logged to the console. Må forbedres for å: "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns"</li>
+                            <h2>Best Practises score på 95. Errors som vises er:</h2>
+                                <p>Browser errors were logged to the console. Må forbedres for å: "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns"</p>
                             <img src="../img/profil_seo_4.png" alt="Bilde av SEO analyse på profil siden. SEO errors.">
-                            <p>SEO score på 89. Error som vises er:
-                                <li>Document does not have a meta description. Må forbedres for å: "Format your HTML in a way that enables crawlers to better understand your apps content."</li>
+                            <h2>SEO score på 89. Error som vises er:</h2>
+                                <p>Document does not have a meta description. Må forbedres for å: "Format your HTML in a way that enables crawlers to better understand your apps content."</p>
                         </li>
                     </ul>
                 </article>
             </section>
             <section class="analyse_UU">
-            <p class="remove">Før du begynner å gjøre forbedrende tiltak skal du også gjennomføre en UU (Accessibility) analyse
-                 ved å kjøre nettsiden igjennom webaim Links to an external site.. 
-                 Resultatene skal på samme måte som med SEO analysen dokumenteres ved bruk av skjermbilder og tekstlige forklaringer.</p>
                 <h2>UU analyse</h2>
                 <article>Ved bruk av webaim har jeg gjort UU analyse av alle sidene på nettstedet med unntak av analyse.html siden.
                     <ul class="UU_analyse">
                         <li>
                             <h3>Index.html</h3>
                             <img src="../img/web_index_1.png" alt="Bilde av UU analyse - summary">
-                            <p>Bilde av UU analyse på index siden - summary</p>
+                            <h2>Bilde av UU analyse på index siden - summary</h2>
                             <img src="../img/web_index_2.png" alt="Bilde av UU analyse - nettside">
-                            <p>Bilde av UU analyse på index siden - nettsiden</p>
+                            <h2>Bilde av UU analyse på index siden - nettsiden</h2>
                             <img src="../img/web_index_3.png" alt="Bilde av UU analyse - details">
-                            <p>Bilde av UU analysen på index siden - details
-                                <li>1 Error: Empty form label</li>
-                                <li>3 Error: Empty link</li>
-                                <li>Contrast error</li>
-                                <li>1 Alert: Skipped heading level</li>
-                                <li>3 Alert: Broken same-page link</li>
-                            </p>
-                            <p>UU analyse av index.html viser at siden har en god score på 100. Det er ingen problemer med UU på denne siden.</p>
+                            <h2>Bilde av UU analysen på index siden - details</h2>
+                                <p>1 Error: Empty form label</p>
+                                <p>3 Error: Empty link</p>
+                                <p>Contrast error</p>
+                                <p>1 Alert: Skipped heading level</p>
+                                <p>3 Alert: Broken same-page link</p>
                         </li>
                         <li>
                             <h3>Produkt.html</h3>
                             <img src="../img/web_produkt_1.png" alt="Bilde av UU analyse - summary">
-                            <p>Bilde av UU analyse på produkt siden - summary</p>
+                            <h2>Bilde av UU analyse på produkt siden - summary</h2>
                             <img src="../img/web_produkt_2.png" alt="Bilde av UU analyse - nettside">
-                            <p>Bilde av UU analyse på produkt siden - nettsiden</p>
+                            <h2>Bilde av UU analyse på produkt siden - nettsiden</h2>
                             <img src="../img/web_produkt_3.png" alt="Bilde av UU analyse - details">
-                            <p>Bilde av UU analysen på produkt siden - details
-                                <li>1 Error: Empty form label</li>
-                                <li>3 Error: Empty link</li>
-                                <li>Contrast error</li>
-                                <li>1 Alert: Skipped heading level</li>
-                                <li>3 Alert: Broken same-page link</li>
-                                <li>2 Alert: Orphaned form label</li>
-                                <li>1 Alert: Skipped heading level</li>
-                            </p>
-                            <p>UU analyse av produkt.html viser at siden har en god score på 100. Det er ingen problemer med UU på denne siden.</p>
+                            <h2>Bilde av UU analysen på produkt siden - details</h2>
+                                <p>1 Error: Empty form label</p>
+                                <p>3 Error: Empty link</p>
+                                <p>Contrast error</p>
+                                <p>1 Alert: Skipped heading level</p>
+                                <p>3 Alert: Broken same-page link</p>
+                                <p>2 Alert: Orphaned form label</p>
+                                <p>1 Alert: Skipped heading level</p>
                         </li>
                         <li>
                             <h3>profil.html</h3>
                             <img src="../img/web_profil_1.png" alt="Bilde av UU analyse - summary">
-                            <p>Bilde av UU analyse på handlekurv siden - summary</p>
+                            <h2>Bilde av UU analyse på profil siden - summary</h2>
                             <img src="../img/web_profil_2.png" alt="Bilde av UU analyse - nettside">
-                            <p>Bilde av UU analyse på handlekurv siden - nettsiden</p>
+                            <h2>Bilde av UU analyse på profil siden - nettsiden</h2>
                             <img src="../img/web_profil_3.png" alt="Bilde av UU analyse - details">
-                            <p>Bilde av UU analysen på handlekurv siden - details
-                                <li>1 Error: Empty form label</li>
-                                <li>3 Error: Empty link</li>
-                                <li>Contrast error</li>
-                                <li>3 Alert: Broken same-page link</li>
-                            </p>
+                            <h2>Bilde av UU analysen på profil siden - details</h2>
+                                <p>1 Error: Empty form label</p>
+                                <p>3 Error: Empty link</p>
+                                <p>Contrast error</p>
+                                <p>3 Alert: Broken same-page link</p>
                         </li>
                     </ul>
                 </article>
             </section>
             <section class="analyse_chatGTP">
-            <p class="remove">Kopier og lim all koden din i Chatgpt og prompt den til å vurdere koden utifra et SEO og UU perspektiv,
-                 og be om spesifikke løsninger.Dokumenter resultatet på analyse.html siden. 
-                IKKE be chatGpt om å oppdatere koden med hva den anbefaler!
                 <h2>ChatGPT analyse</h2>
                 <article>ChatGPT vurderte koden utifra et SEO og UU perspektiv og viste en del løsninger:
                     <ul class="chatGTP_analyse">
@@ -207,13 +180,13 @@
                             <h3>SEO</h3>
                             <img src="../img/chat_seo_index_1.png" alt="Bilde av ChatGPT analyse - index siden">
                             <img src="../img/chat_seo_index2.png" alt="Bilde av ChatGPT analyse - index siden del2">
-                            <p>Bilde av ChatGPT analyse - index siden</p>
-                            <img src="../img/chat_seo_produkt_1.png" alt="Bilde av ChatGPT analyse - produkt siden">
+                                <p>Bilde av ChatGPT analyse - index siden</p>
+                            <img src="../img/chat_seo_produkt1.png" alt="Bilde av ChatGPT analyse - produkt siden">
                             <img src="../img/chat_seo_produkt2.png" alt="Bilde av ChatGPT analyse - produkt siden del2">
-                            <p>Bilde av ChatGPT analyse - produkt siden</p>
-                            <img src="../img/chat_seo_profil_1.png" alt="Bilde av ChatGPT analyse - profil siden">
+                                <p>Bilde av ChatGPT analyse - produkt siden</p>
+                            <img src="../img/chat_seo_profil1.png" alt="Bilde av ChatGPT analyse - profil siden">
                             <img src="../img/chat_seo_profil2.png" alt="Bilde av ChatGPT analyse - profil siden del 2">
-                            <p>Bilde av ChatGPT analyse - profil siden</p>
+                                <p>Bilde av ChatGPT analyse - profil siden</p>
                         </li>
                         <li>
                             <h3>UU</h3>
@@ -227,9 +200,6 @@
                 </article>
             </section>
             <section class="tabel">
-            <p class="remove">Lag en tabell på analyse.html siden, den skal ha tre kolonner, en for chatgpt resultater, 
-                en for lighthouse resultater og en for webaim Links to an external site. resultater. 
-                I tabellen sammenligner du resultatene.</p>
                 <h2>Sammenligning av resultater</h2>
                 <article>Jeg har opprettet en tabell hvor resultatene fra chatgpt, lighthouse og webaim links sammenlignes
                 <table>
@@ -240,45 +210,45 @@
                     </tr>
                     <tr>
                         <td>SEO
-                            <li>Meta tags - legg til.</li>
-                            <li>Lenker - sørg for lenker er riktig format</li>
-                            <li>Semantisk HTML - bruk semnatisk HTML-kodeing</li>
-                            <li>bilder - sørg for beskrivelse 'alt'</li>
-                            <li>Sosiale medier - sørg for at sosiale medielenker er korekt koblet</li>
-                            <li>Responsivt design - test nettsiden på ulike enheter</li>
-                            <li>Nettsetdsytelse - optimaliser bilde- og filstørrelser for reskere sidelasting</li>
-                            <li>Innholdskvalitet - sørg for innholdet ditt er relevant</li>
+                            <p>Meta tags - legg til.</p>
+                            <p>Lenker - sørg for lenker er riktig format</p>
+                            <p>Semantisk HTML - bruk semnatisk HTML-kodeing</p>
+                            <p>bilder - sørg for beskrivelse 'alt'</p>
+                            <p>Sosiale medier - sørg for at sosiale medielenker er korekt koblet</p>
+                            <p>Responsivt design - test nettsiden på ulike enheter</p>
+                            <p>Nettsetdsytelse - optimaliser bilde- og filstørrelser for reskere sidelasting</p>
+                            <p>Innholdskvalitet - sørg for innholdet ditt er relevant</p>
                         </td>
                         <td>SEO
-                            <li>Document does not have a meta description.</li>
+                            <p>Document does not have a meta description.</p>
                         </td>
                         <td>SEO
-                            <li>Empty form label</li>
-                            <li>Empty link</li>
-                            <li>Alert: Skipped heading level</li>
-                            <li>Alert: Broken same-page link</li>
-                            <li>Alert: Select missing label</li>
-                            <li>Alert: Orphaned form label</li>
+                            <p>Empty form label</p>
+                            <p>Empty link</p>
+                            <p>Alert: Skipped heading level</p>
+                            <p>Alert: Broken same-page link</p>
+                            <p>Alert: Select missing label</p>
+                            <p>Alert: Orphaned form label</p>
                             
                         </td>
                     </tr>
                     <tr>
                         <td>UU
-                            <li>Kontrastforhold - sørg for tekst og bakgrunn har tilstrekkelig kontrast</li>
-                            <li>Skjermlesevennlighet -bruk semantiske HTML-elementer riktig. </li>
-                            <li>Tastaturnavigasjon - sørg for alle interaktive elementer er tastaturnavigerbare og fokusstyrte.</li>
-                            <li>Bilder og multimedier - inkluder beskrivende 'alt'-attributter for alle bilder</li>
-                            <li>Skalering og responsivitet - design nettsiden slik at den skalerer jevnt på ulike enheter og skjermstørrelser</li>
-                            <li>Tydelige lenker og knapper - sørg for at lenker og knapper er tydelige og ankle å identifisere.</li>
+                            <p>Kontrastforhold - sørg for tekst og bakgrunn har tilstrekkelig kontrast</p>
+                            <p>Skjermlesevennlighet -bruk semantiske HTML-elementer riktig. </p>
+                            <p>Tastaturnavigasjon - sørg for alle interaktive elementer er tastaturnavigerbare og fokusstyrte.</p>
+                            <p>Bilder og multimedier - inkluder beskrivende 'alt'-attributter for alle bilder</p>
+                            <p>Skalering og responsivitet - design nettsiden slik at den skalerer jevnt på ulike enheter og skjermstørrelser</p>
+                            <p>Tydelige lenker og knapper - sørg for at lenker og knapper er tydelige og ankle å identifisere.</p>
                         </td>
                         <td>UU
-                            <li>Links do not have a discernible name</li>
-                            <li>Heading elements are not in a sequentially-descending order</li>
-                            <li>Browser errors were logged to the console</li>
-                            <li>Select elements do not have associated label elements.</li>
+                            <p>Links do not have a discernible name</p>
+                            <p>Heading elements are not in a sequentially-descending order</p>
+                            <p>Browser errors were logged to the console</p>
+                            <p>Select elements do not have associated label elements.</p>
                         </td>
                         <td>UU
-                            <li>Contrast errors: very low contrast</li>
+                            <p>Contrast errors: very low contrast</p>
                         </td>
                     </tr>
                 </table>
@@ -287,11 +257,6 @@
                 </article>
             </section>
             <section class="forbedringstiltak">
-            <p class="remove"> Gjør forbedrende tiltak for å øke siden SEO og UU.
-             Ta skjermbilder underveis og skriv en liste over tiltak du har gjort for å forbedre. 
-             Til slutt skal du på nytt kjøre alle sidene (med unntak av analyse.html) på nettstedet igjennom 
-             de ulike verktøyene (lighthouse og webaim) og dokumentere resultatene dine, 
-             fikk du bedre score og hvorfor?></p>
                 <h2>forbedringstiltak</h2>
                 <article>Jeg har gjørt forbedrende tiltak for å øke siden SEO og UU.
                     <ul class="endringer">
@@ -370,11 +335,9 @@
             <p class="remove">Del 3: Bruk av ARIA-attributter og skjermlesere
                 Skjermleserkompatibilitet: Test nettstedet med skjermlesere og identifiser utfordringer. 
                 Dokumenter det på analyse.html siden
-                Tastaturnavigasjon: Sjekk om nettstedet kan navigeres med tastatur alene. 
-                Legg inn en skip til hovedinnhold snarvei.
-                ARIA-attributter: Bruk ARIA-attributter for å forbedre skjermleserstøtte</p>
-            <h2>DEL 3 Tilgjengelighet</h2>
-            <article>I denne delen tastet jeg nettstedet med skjermlesere og identifiserte utfordringer. Sjekket om nettstedet kan navigeres med tastatur
+                </p>
+                <h2>DEL 3 Tilgjengelighet</h2>
+                <article>I denne delen tastet jeg nettstedet med skjermlesere og identifiserte utfordringer. Sjekket om nettstedet kan navigeres med tastatur
                 <ul class="skjermleser">
                     <li>
                         <h3>Skjermleser</h3>
@@ -383,16 +346,20 @@
                     </li>
                     <li>
                         <h3>Tastaturnavigasjon</h3>
-                        <img src="../img/tastaturnavigasjon.png" alt="Bilde av tastaturnavigasjon">
-                        <p>Tastaturnavigasjon</p>
+                        <img src="../img/tastatur_kode1.png" alt="Bilde av tastaturnavigasjon">
+                        <img src="../img/tastatur_kode2.png" alt="Bilde av tastaturnavigasjon">
+                        <img src="../img/tastatur_kode3.png" alt="Bilde av tastaturnavigasjon">
+                        <img src="../img/tastatur_skip.png" alt="Bilde av tastaturnavigasjon">
+                        <p>Tastaturnavigasjon ble opprettet gjennom kode. det ble lagt inn skip til hovedinnhold snarvei på alle 3 sider.Informasjon ble tatt av UU sine sider.</p>
                     </li>
                     <li>
                         <h3>ARIA-attributter</h3>
-                        <img src="../img/ARIA-attributter.png" alt="Bilde av ARIA-attributter">
-                        <p>ARIA-attributter</p>
+                        <img src="../img/aria_attributt.png" alt="Bilde av ARIA-attributter">
+                        <img src="../img/fikset_webaim.png" alt="Bilde av ARIA-attributter">
+                        <p>Brukte ARIA-attributter ved forbedrings tiltak på webaim</p>
                     </li>
                 </ul>
-            </article>
+                </article>
             </section>
             <section class="del_4">
             <p class="remove">Del 4: Microdata og Rich Results
@@ -420,14 +387,15 @@
                             <p>Bilder viser resultatet etter forbedringstiltak i både Richresults og schema.org. Det ble added itemprop 'image', 'manufacturer', added div section hvor jeg flytett 'offers'-biblioteket, added contant'price'</p>
                         </li>
                     </ul>
+                </article>
             </section>
             <section class="del_5">
             <p class="remove">Meta og SOME
                 Optimalisering av meta-tags: Oppdater titteltags og metabeskrivelser med relevante søkeord. Og legg til spesifikk meta-data for ulike SOME(Instagram, Facebook).
                     Dette skal gjøre pa alle sidene, alle sidene skal ha metadata tilpasset innholdet pa siden.
             </p>
-            <h2>Meta og SOME</h2>
-            <article>Jeg har optimalisert meta-tags på alle sidene. Oppdatert titteltags og metabeskrivelser med relevante søkeord. Og lagt til spesifikk meta-data for ulike SOME(Instagram, Facebook).
+                <h2>Meta og SOME</h2>
+                <article>Jeg har optimalisert meta-tags på alle sidene. Oppdatert titteltags og metabeskrivelser med relevante søkeord. Og lagt til spesifikk meta-data for ulike SOME(Instagram, Facebook).
                 <ul class="meta">
                     <li>
                         <h3>Index.html</h3>
@@ -445,8 +413,8 @@
                         <p>Bilde av meta profil</p>
                     </li>
                 </ul>
+                </article>
             </section>
-
         </main> 
         <footer>
             <ul id="foots">
