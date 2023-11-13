@@ -498,17 +498,34 @@ footer nav ul {
         padding: 1rem;
         
     }
-    .tabel{
+    table {
         width: 100%;
         border-collapse: collapse;
+        margin-bottom: 20px;
     }
     
-    .tabel td {
+    th, td {
         border: 1px solid #ddd;
         padding: 8px;
-        text-align: center;
-        list-style: none;
+        text-align: left;
     }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    td p {
+        margin: 5px 0;
+    }
+    
+    td {
+        line-height: 1.4;
+    }
+    
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+    
     .skip-link {
         position: absolute;
         top: -40px;
